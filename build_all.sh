@@ -54,11 +54,6 @@ function build_curl() {
 
     make -j$(($(getconf _NPROCESSORS_ONLN) + 1))
     make install
-    #clean up
-    rm -rf ${CURL_SRC_DIR}
-    rm -rf ${INSTALL_DIR}/bin
-    rm -rf ${INSTALL_DIR}/share
-    rm -rf ${INSTALL_DIR}/lib/pkgconfig
 }
 
 
